@@ -1,0 +1,372 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+.view {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.splash {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash .logo {
+    padding: 0 24px;
+    max-width: 100%;
+  }
+
+.splash .logo img {
+      display: block;
+      width: 100%;
+    }
+
+.splash .menu {
+    margin-top: 24px;
+  }
+
+.splash .menu-item.menu-item-with-icon {
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+.splash .menu-item.menu-item-with-icon img {
+      height: 24px;
+    }
+
+.splash .menu-item.menu-item-with-icon span {
+      margin-left: 8px;
+      display: block;
+    }
+
+.menu {
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 2px #000,
+    inset 0 0 0 4px #D34100,
+    inset 0 0 0 6px #F3A261,
+    inset 0 0 0 8px #000000,
+    inset 0 0 0 10px #D34100,
+    inset 0 0 0 12px #00A261,
+    inset 0 0 0 14px #D34100,
+    inset 0 0 0 16px #F3E3D3;
+  background: #F3E3D3;
+  padding: 24px;
+}
+
+.menu .corner {
+    position: absolute;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAKRlWElmTU0AKgAAAAgABgESAAMAAAABAAEAAAEaAAUAAAABAAAAVgEbAAUAAAABAAAAXgEoAAMAAAABAAIAAAExAAIAAAATAAAAZodpAAQAAAABAAAAegAAAAAAAABIAAAAAQAAAEgAAAABUGl4ZWxtYXRvciBQcm8gMS44AAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAEKADAAQAAAABAAAAEAAAAAASxg5mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFnmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgICAgICAgICAgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiCiAgICAgICAgICAgIHhtbG5zOmV4aWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vZXhpZi8xLjAvIgogICAgICAgICAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIj4KICAgICAgICAgPHhtcE1NOkRlcml2ZWRGcm9tIHJkZjpwYXJzZVR5cGU9IlJlc291cmNlIj4KICAgICAgICAgICAgPHN0UmVmOmluc3RhbmNlSUQ+eG1wLmlpZDo2RjQ5OTYxQjA3MTcxMUU3OTA5RkYxNkJBNEJCRTQ0OTwvc3RSZWY6aW5zdGFuY2VJRD4KICAgICAgICAgICAgPHN0UmVmOmRvY3VtZW50SUQ+eG1wLmRpZDo2RjQ5OTYxQzA3MTcxMUU3OTA5RkYxNkJBNEJCRTQ0OTwvc3RSZWY6ZG9jdW1lbnRJRD4KICAgICAgICAgPC94bXBNTTpEZXJpdmVkRnJvbT4KICAgICAgICAgPHhtcE1NOkluc3RhbmNlSUQ+eG1wLmlpZDo2RjQ5OTYxRDA3MTcxMUU3OTA5RkYxNkJBNEJCRTQ0OTwveG1wTU06SW5zdGFuY2VJRD4KICAgICAgICAgPHhtcE1NOkRvY3VtZW50SUQ+eG1wLmRpZDo2RjQ5OTYxRTA3MTcxMUU3OTA5RkYxNkJBNEJCRTQ0OTwveG1wTU06RG9jdW1lbnRJRD4KICAgICAgICAgPGV4aWY6UGl4ZWxYRGltZW5zaW9uPjE2PC9leGlmOlBpeGVsWERpbWVuc2lvbj4KICAgICAgICAgPGV4aWY6UGl4ZWxZRGltZW5zaW9uPjE2PC9leGlmOlBpeGVsWURpbWVuc2lvbj4KICAgICAgICAgPHhtcDpDcmVhdG9yVG9vbD5QaXhlbG1hdG9yIFBybyAxLjg8L3htcDpDcmVhdG9yVG9vbD4KICAgICAgICAgPHhtcDpNZXRhZGF0YURhdGU+MjAyMC0wOS0yMlQxNDoyODoxNVo8L3htcDpNZXRhZGF0YURhdGU+CiAgICAgICAgIDx0aWZmOlhSZXNvbHV0aW9uPjcyMDAwMC8xMDAwMDwvdGlmZjpYUmVzb2x1dGlvbj4KICAgICAgICAgPHRpZmY6T3JpZW50YXRpb24+MTwvdGlmZjpPcmllbnRhdGlvbj4KICAgICAgICAgPHRpZmY6UmVzb2x1dGlvblVuaXQ+MjwvdGlmZjpSZXNvbHV0aW9uVW5pdD4KICAgICAgICAgPHRpZmY6WVJlc29sdXRpb24+NzIwMDAwLzEwMDAwPC90aWZmOllSZXNvbHV0aW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KABJGmAAAASJJREFUOBGtU9uJwzAQXIf7TQkHbiBFuJGAWkghacGgRlSEGwhcCS7gbmY3s+yFfIQQQSxptDP7jO29/fJn9+X3n+01DLyD85aLbYsl6fh9mohX8YrR1sDJRWBrPQX0UAUqRlsXAfjFh7k1fIdRde9Qx7qtKzdfNA4bXGEz2xUHcMZqk/I/ntc8k3waNsmLzhKptrajYOEnciaJmIT55qkA87dacGDplao0oDeRlUb1/GiT1VYUNXwRn2G0p9Noo9hv7Bnuuyl8toi1eGods9JZNalt/F9EjufgkMQgicAi6uwjfLehkE+it2vuPmEEXQGfvcVUMgJOHRcn9TYWeDj7/cCw574loDS0Byn+rYmBTA7v0UaERC/yrunk/RkWEUWqf0boNTL3u57SAAAAAElFTkSuQmCC) no-repeat;
+    background-size: 32px 32px;
+    background-color: #000;
+    width: 16px;
+    height: 16px;
+    -ms-interpolation-mode: nearest-neighbor;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: pixelated;
+  }
+
+.menu .corner-tl {
+    top: 0;
+    left: 0;
+  }
+
+.menu .corner-tr {
+    top: 0;
+    right: 0;
+    background-position: -16px 0;
+  }
+
+.menu .corner-bl {
+    bottom: 0;
+    left: 0;
+    background-position: 0 -16px;
+  }
+
+.menu .corner-br {
+    bottom: 0;
+    right: 0;
+    background-position: -16px -16px;
+  }
+
+.menu .menu-item {
+    cursor: pointer;
+    display: block;
+    padding: 4px 6px;
+  }
+
+.menu .menu-item:hover {
+    background: #000;
+    color: #F3E3D3
+  }
+
+.game {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.game .tools {
+    display: flex;
+    flex: 0 0 40px;
+    padding: 24px 4px 4px;
+    background: #161616;
+    justify-content: space-between;
+  }
+
+.game .tools .top,
+    .game .tools .bottom {
+      display: flex;
+    }
+
+.game .tool-item {
+    display: block;
+    cursor: pointer;
+    padding: 8px;
+    width: 24px;
+    height: 24px;
+  }
+
+.game .tool-item svg {
+      fill: #fff;
+    }
+
+.game .tool-item:active {
+    background: #333333;
+  }
+
+.game .tool-item.disabled svg {
+      fill: #777;
+    }
+
+.game .screen {
+    flex: 1 1 auto;
+  }
+
+.dosbox-container {
+  width: 100%;
+  height: 100%;
+}
+
+.screen {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.screen canvas {
+    width: var(--screen-width);
+    height: var(--screen-height);
+    image-rendering: auto !important;
+  }
+
+.screen .canvas {
+    width: var(--screen-width);
+    height: var(--screen-height);
+    background: #333;
+    height: 0;
+    padding-top: 66.66666%
+  }
+
+.screen .canvas-container,
+  .screen .event-blocker {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+.screen .keyboard {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+
+.screen .keyboard .line {
+      display: flex;
+    }
+
+.screen .keyboard .key {
+      position: relative;
+      box-sizing: border-box;
+      margin: 2px;
+      border-radius: 4px;
+      width: 44px;
+      height: 44px;
+      color: #fff;
+      background: rgba(0, 0, 0, .375);
+    }
+
+.screen .keyboard .key.active {
+        background: rgba(80, 80, 80, .375);
+      }
+
+.screen .keyboard .label {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      font-size: 12px;
+    }
+
+.screen .keyboard .label .or {
+        font-size: 75%;
+        color: rgba(255, 255, 255, .375);
+      }
+
+.screen .keyboard .description {
+      display: none;
+    }
+
+.screen .keyboard .description {
+      position: absolute;
+      bottom: 6px;
+      left: 6px;
+      font-size: 10px;
+      color: rgba(255, 255, 255, .625);
+    }
+
+.screen .keyboard .key-row-2 {
+      height: 92px;
+    }
+
+.screen .keyboard .key-row-3 {
+      height: 140px;
+    }
+
+.screen .keyboard .key-col-2 {
+      width: 92px;
+    }
+
+.screen .keyboard .key-col-3 {
+      width: 140px;
+    }
+
+.message {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background: rgba(255, 255, 255, .75);
+  pointer-events: none;
+}
+
+.fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-leave-to {
+  opacity: 0;
+}
+
+.version {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  position: absolute;
+  right: 6px;
+  bottom: 4px;
+  color: #333;
+  font-size: 14px;
+}
+
+.github {
+  position: absolute;
+  display: flex;
+  right: 6px;
+  top: 4px;
+  color: #777;
+  font-size: 12px;
+  align-items: center;
+}
+
+.github svg {
+    width: 14px;
+    fill: #777;
+  }
+
+.github span {
+    margin-left: 4px;
+  }
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .game {
+    flex-flow: row;
+  }
+      .screen .keyboard .key {
+        width: 60px;
+        height: 60px;
+      }
+        .screen .keyboard .key .label {
+          font-size: 14px;
+        }
+        .screen .keyboard .key .description {
+          display: block;
+        }
+      .screen .keyboard .key-row-2 {
+        height: 124px;
+      }
+      .screen .keyboard .key-row-3 {
+        height: 188px;
+      }
+      .screen .keyboard .key-col-2 {
+        width: 124px;
+      }
+      .screen .keyboard .key-col-3 {
+        width: 188px;
+      }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (orientation: landscape) {
+  .game {
+    flex-flow: row;
+  }
+    .game .tools {
+      flex-flow: column;
+    }
+    .game .top,
+    .game .bottom {
+      flex-flow: column;
+    }
+}
+
+
+/*# sourceMappingURL=main_3afa607e1adabe90e623.css.map*/
